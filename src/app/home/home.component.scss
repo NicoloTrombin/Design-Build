@@ -1,0 +1,314 @@
+
+/* Title and Button Starts Here */
+.hero{
+    padding-top: 12rem;
+}
+
+.container{
+    max-width: 1068px;
+}
+
+.principal h1{
+    color: var(--secondary-color);
+    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.secondary p{
+    color: var(--primary-color);
+    font-family: "minion-pro",serif;
+    font-size: 24px;
+}
+
+.has-text-primary {
+    color: #ffda27;
+}
+
+.principal, .secondary {
+    display: flex;
+    text-align: left;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.secondary {
+    text-align: left;
+}
+
+.see-our-work {
+    padding-top: 4rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.see-our-work span{
+    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+}
+
+.see-our-work a{
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: 1px solid var(--third-color);
+    background: var(--third-color);
+    color: var(--white-color);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.see-our-work i {
+    flex-direction: row;
+    font-size: 1.5rem;
+    transform: translateY(15%);
+    color: var(--white-color);
+}
+
+.see-our-work a:hover .text, .see-our-work a:hover {
+    background-color: var(--white-color); 
+    color: var(--third-color);
+}
+
+/* Projects Starts Here */
+.projects{
+    padding-top: 5rem;
+}
+
+.project-image {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    transition: all .3s ease-in;
+}
+
+figure {
+    gap: .5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+figcaption {
+    background-color: var(--white-color);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    padding: 18px;
+    transition: all .3s ease-in;
+} 
+
+.visible {
+    opacity: 1;
+}
+
+.title-wrapper h1{
+    font-size: 1rem;
+    line-height: 1.125;
+    font-weight: 600;
+    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+    color: var(--secondary-color);
+}
+
+.arrow-wrapper i{
+    color: var(--third-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Vision Clarity Result */
+.vcr {
+    padding-top: 8rem;
+}
+
+.third h1{
+    color: var(--secondary-color);
+    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+    font-weight: 600;
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+.col-md-4 {
+    padding-bottom: 1rem;
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: 1px solid transparent;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    line-height: 1.125;
+    font-weight: 600;
+    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+    color: var(--secondary-color);
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.card-text {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.centriamo {
+    display: flex;
+    justify-content: center;
+}
+
+/* Review Block */
+.review {
+    padding-top: 10rem;
+}
+
+.testimonial-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,218,39,0.1);
+}
+
+.is-block svg{
+    color: var(--third-color);
+}
+
+.comment {
+    padding-top: 2rem;
+    width: 60%;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--secondary-color);
+}
+
+.r-author {
+    padding-top: 2rem;
+    display: flex;
+    gap: .7rem;
+}
+
+.author-info{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.author-name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+}
+
+.author-location {
+    transform: translateY(-50%);
+}
+
+/* Last Hero */
+.ls-t {
+    display: flex;
+    gap: 3rem;
+}
+
+.hero-title p{
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+    color: var(--secondary-color);
+}
+
+
+.hero-desc p{
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.hero-link {
+    float: left;
+    padding-top: 1rem;
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+    .principal h1{
+        text-align: left;
+    }
+    .principal, .secondary{
+        width: 100%
+    } 
+}
+
+@media(max-width: 759px) {
+    .ls-t{
+        flex-direction: column;
+    }
+    .hero-image img{
+        display: flex;
+        margin: 0 auto;
+    }
+    .hero-info{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .comment p{
+        font-size: 1.4rem;
+    }
+    .author-info{
+        font-size: 1rem;
+    }
+    .author-name{
+        font-size: 1.1rem;
+    }
+    .is-rounded{
+        width: 80px;
+    }
+    .is-block svg{
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media(max-width:553px) {
+    .r-author {
+        flex-direction: column;
+    }
+    .author-img img{
+        display: flex;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 432px) {
+    .principal h1{
+        font-size: 2rem;
+    }
+    .secondary p{
+        font-size: 19px;
+    }
+    .see-our-work a{
+        font-size: .9rem;
+    }
+    .see-our-work i{
+        font-size: 1rem;
+    }
+    .hero-title p{
+        font-size: 1.3rem;
+    }
+    .hero-desc p{
+        font-size: 1.1rem;
+    }
+    .hero-image img{
+        width: 250px;
+    }
+}

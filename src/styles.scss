@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+/* Importing Fonts */
+@import url("https://p.typekit.net/p.css?s=1&k=wze6njk&ht=tk&f=6812.6815.6817.39347.39348.39349&a=8080773&app=typekit&e=css");
+
+:root {
+    --primary-color: #1c355e;
+    --secondary-color: #011e41;
+    --third-color: #3d7dca;
+    --white-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    list-style: none !important;
+    box-sizing: border-box ;
+    font-family: "minion-pro", serif;
+}
+

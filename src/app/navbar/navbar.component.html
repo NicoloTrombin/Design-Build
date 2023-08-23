@@ -1,0 +1,35 @@
+<header ngxHideOnScroll [propertyUsedToHide]="'transform'" [valueWhenHidden]="'translateY(-100%)'"
+[valueWhenShown]="'translateY(0%)'">
+    <div class="container" >
+        <nav id="nav" class="nav_checkbox">
+            <a href="#">
+                <img src="https://wfdesignbuild.com/img/wf_logo_dy.svg" alt="logo" class="logo">
+            </a>
+                <input type="checkbox" id="tab-nav" class="tab-nav" [(ngModel)]="checkboxValue">
+
+            <label for="tab-nav" class="label">
+                <div id="burg1" class="burger"></div>
+                <div id="burg0" class="burger"></div>
+                <div id="burg2" class="burger"></div>
+            </label>
+
+            <ul class="content_nav">
+                <li><a href="/services" (click)="toggleCheckbox()">Services</a></li>
+                <li><a href="/work" (click)="toggleCheckbox()">Work</a></li>
+                <li><a href="/about" (click)="toggleCheckbox()">About</a></li>
+
+                <div class="travel" (click)="toggleCheckbox(); redirectToContact()" >
+                    <a href="/contact" style="text-decoration: none;">
+                        <span class="text">Start your project</span>
+                        <i class='bx bx-right-arrow-alt text'></i>
+                    </a>
+                </div>
+            </ul>
+
+        </nav>
+    </div>
+</header>
+
+
+
+

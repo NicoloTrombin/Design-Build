@@ -1,0 +1,162 @@
+/* Banner */
+.banner {
+    padding-top: 20.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.is-dark {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.has-background-dark {
+    background-color: var(--secondary-color) !important;
+}
+
+.container {
+    max-width: 1068px;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+
+.main-banner {
+    transform: translateY(-70%);
+}
+
+.banner-title h1{
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+    padding-bottom: 1rem;
+}
+
+.banner-desc{
+    width: 70.66666674%;
+    display: block;
+    margin: 0 auto;
+}
+
+.banner-desc h2{
+    line-height: 32px;
+    font-size: 1.6rem;
+}
+
+/* Cards */
+.is-transform-up{
+    transform: translateY(-5rem);
+}
+
+.container2 {
+    max-width: 1168px;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+
+.card{
+    padding: 5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+}
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+.col-md-6{
+    margin-top: 1.5rem;
+}
+
+.has-text-navy {
+    color: var(--primary-color);
+}
+
+.card-title{
+    margin-top: 1.5rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.125;
+    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+}
+
+.card-text{
+   margin-top: 1.5rem; 
+   color: var(--primary-color);
+   font-size: 1.25rem;
+   font-weight: 400;
+}
+
+/* Last Hero */
+.hero{
+    padding-top: 7rem;
+}
+
+.ls-t {
+    display: flex;
+    gap: 3rem;
+}
+
+.hero-title p{
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+    color: var(--secondary-color);
+}
+
+
+.hero-desc p{
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.hero-link {
+    float: left;
+    padding-top: 1rem;
+}
+
+.see-our-work {
+    padding-top: 4rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.see-our-work span{
+    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+}
+
+.see-our-work a{
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: 1px solid var(--third-color);
+    background: var(--third-color);
+    color: var(--white-color);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.see-our-work i {
+    flex-direction: row;
+    font-size: 1.5rem;
+    transform: translateY(15%);
+    color: var(--white-color);
+}
+
+.see-our-work a:hover .text, .see-our-work a:hover {
+    background-color: var(--white-color); 
+    color: var(--third-color);
+}

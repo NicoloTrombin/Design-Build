@@ -1,0 +1,60 @@
+.title h1{
+    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.description h3{
+    color: var(--primary-color);
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.myForm{
+    padding-top: 2.5rem;
+}
+
+.form-group{
+    width: 100%;
+}
+
+.form-group label{
+    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.part-1, .part-2, .part-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 ;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+input, select {
+    height: 3.65rem;
+    padding-bottom: .6rem;
+    gap: 1rem;
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+}
+
+textarea {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+}
+
+.see-our-work{
+    display: flex;
+    float: left;
+}
+
+.see-our-work span{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}

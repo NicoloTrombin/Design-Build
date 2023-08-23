@@ -1,0 +1,90 @@
+.stats{
+    transform: translateY(-4rem);
+}
+
+.container2{
+    background-color: var(--white-color);
+}
+
+.stats-content{
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.title2{
+    color: var(--secondary-color);
+    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.title-desc{
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/* Promise */
+.promise-content{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+
+.promise-content2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 7rem;
+}
+
+.promise-info-title h2{
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: "itc-avant-garde-gothic-pro",sans-serif;
+}
+
+.promise-info-subtitle p{
+    margin-top: 2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.35rem;
+}
+
+.promise-info-description p{
+    margin-top: 2rem;
+    color: var(--primary-color);
+    font-size: 1.35rem;
+}
+
+/* Core Values */
+.card-title, .card-text{
+    text-align: left !important;
+    margin: 0 !important;
+}
+
+.card2 {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.card-body{
+    padding: 2rem;
+}
+
+/* Magic Middle */
+// Code reused with our promise scss classes
+.move-down{
+    padding-top: 10rem;
+}
+
+.review{
+    padding-top: 12rem !important;
+}
+
+svg:not(:root).svg-inline--fa {
+    all: revert;
+}

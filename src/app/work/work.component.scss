@@ -1,0 +1,23 @@
+.secondary {
+    justify-content: center;
+}
+
+figure img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+figcaption {
+    padding: 4px !important;
+}
+
+.title-wrapper h1 {
+    font-size: .9rem !important;
+    margin-top: .9rem !important;
+}
+
+.arrow-wrapper i {
+    font-size: 1.4rem !important;
+    margin-top: .9rem !important;
+}
