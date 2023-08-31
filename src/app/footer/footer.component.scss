@@ -16,9 +16,6 @@ ul {
    a:focus {
     outline:0
    }
-   img {
-    max-width:100%
-   }
    p {
     font-size:16px;
     line-height:30px;
@@ -83,10 +80,6 @@ ul {
     font-family: "itc-avant-garde-gothic-pro",sans-serif;
     color: var(--secondary-color);
    }
-   .widget-about img {
-    display:block;
-    margin-bottom:30px
-   }
    .widget-about p {
     font-weight:400
    }
@@ -106,5 +99,17 @@ ul {
     .footer-menu {
      padding-left:0
     }
-   }
+    @media(max-width: 759px) {
+
+      .widget-about p {
+        font-size: 1.2rem
+      }  
+      .widget-about a {
+        font-size: 1rem;
+      }
+      .footer-menu p{
+        font-size: 1.2rem;
+      }
+    }
+}
    

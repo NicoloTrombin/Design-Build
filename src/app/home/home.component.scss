@@ -240,6 +240,15 @@ figcaption {
 }
 
 /* Media Queries */
+@media(max-width: 789px) {
+    .hero-link a {
+        font-size: 1.1rem;
+    }
+    .hero-link i {
+       font-size: 1.1rem; 
+    }
+}
+
 @media(max-width: 768px) {
     .principal h1{
         text-align: left;
@@ -250,6 +259,27 @@ figcaption {
 }
 
 @media(max-width: 759px) {
+    // First Title
+    .principal h1{
+        font-size: 2rem;
+    }
+    .secondary p{
+        font-size: 19px;
+    }
+    .hero-title p{
+        font-size: 1.3rem;
+    }
+    .hero-desc p{
+        font-size: 1.1rem;
+    }
+    .hero-image img{
+        width: 250px;
+    }
+    // Vision clarity results
+    .third h1{
+        font-size: 2rem;
+    }
+    // Review
     .ls-t{
         flex-direction: column;
     }
@@ -261,7 +291,7 @@ figcaption {
         width: 90%;
         margin: 0 auto;
     }
-    .comment p{
+    .comment{
         font-size: 1.4rem;
     }
     .author-info{
@@ -290,25 +320,39 @@ figcaption {
 }
 
 @media(max-width: 432px) {
-    .principal h1{
-        font-size: 2rem;
+    // Plan design build Cards
+    .card-title{
+        font-size: 1.2rem;
     }
-    .secondary p{
-        font-size: 19px;
+    .card-text{
+        font-size: 1rem;
     }
+    // Button
     .see-our-work a{
         font-size: .9rem;
     }
     .see-our-work i{
         font-size: 1rem;
     }
-    .hero-title p{
-        font-size: 1.3rem;
-    }
-    .hero-desc p{
+    // Review 
+    .comment{
         font-size: 1.1rem;
     }
-    .hero-image img{
-        width: 250px;
+    @media(max-width: 344px) {
+        .title-wrapper h1{
+            font-size: .9rem;
+        }
+        .arrow-wrapper i {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media(max-width: 316px) {
+        .see-our-work {
+            width: 85%;
+        }
+        .hero-info {
+            width: 100%;
+        }
     }
 }

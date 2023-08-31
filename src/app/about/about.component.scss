@@ -1,14 +1,18 @@
 .stats{
     transform: translateY(-4rem);
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 .container2{
+    max-width: 1068px;
     background-color: var(--white-color);
+    justify-content: center;
+    align-items: center;
 }
 
 .stats-content{
     padding: 5rem;
-    display: flex;
     justify-content: center;
     gap: 6rem;
 }
@@ -38,7 +42,7 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    gap: 7rem;
+    gap: 5rem;
 }
 
 .promise-info-title h2{
@@ -83,8 +87,89 @@
 
 .review{
     padding-top: 12rem !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 svg:not(:root).svg-inline--fa {
     all: revert;
+}
+
+// Media queries
+@media(min-width: 885px) {
+    .stats-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
+}
+@media(max-width: 1079px) {
+    .title2 {
+        font-size: 2.5rem
+    }
+    .stats-content {
+        padding: 2rem;
+    }
+    .promise-image img {
+        width: 400px;
+    }
+}
+
+@media(max-width: 885px) {
+    .stats-content {
+        gap: 2rem;
+    }
+    .promise-content {
+        gap: 1rem;
+    }
+}
+
+@media(max-width: 759px) {
+    .stats-content {
+        gap: 1rem;
+    }
+    .promise-content{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 2rem;
+    }
+    .promise-info{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .promise-info-title h2{
+        font-size: 2rem;
+    }
+    .promise-info-subtitle p{
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+    .promise-info-description p{
+        font-size: 1.2rem;
+        margin-top: .5rem;
+    }
+    .promise-image img {
+        width: 350px;
+    }
+    .secondary p {
+        display: flex;
+        margin: 0 auto;
+        font-size: 1.3rem !important;
+        width: 90% !important;
+    }
+    .card-img-top img{
+        width: 200px;
+    }
+    .promise-content2 {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 2rem;
+    }
+}
+
+@media(max-width: 432px) {
+    .promise-image img {
+        width: 250px;
+    }
 }

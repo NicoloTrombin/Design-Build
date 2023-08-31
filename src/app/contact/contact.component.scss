@@ -58,3 +58,34 @@ textarea {
     padding-left: 2rem;
     padding-right: 2rem;
 }
+
+// Media queries
+@media(max-width: 759px) {
+    .title h1{
+        font-size: 1.8rem;
+    }
+    .description h3{
+        font-size: 1.3rem;
+        padding-top: 1rem;
+    }
+}
+
+@media(max-width: 423px) {
+    input, select {
+        height: 3rem;
+        font-size: 1.1rem
+    }
+    textarea {
+        font-size: 1.1rem;
+    }
+    .part-1, .part-2, .part-3 {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+@media(max-width: 320px) {
+    .part-1, .part-2, .part-3 {
+        flex-direction: column;
+    }
+}

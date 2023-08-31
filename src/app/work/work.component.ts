@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, HostListener, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-work',
@@ -16,10 +16,16 @@ export class WorkComponent implements OnInit {
   showCaption7 = false;
   showCaption8 = false;
   showCaption9 = false;
+  isMobile = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  @HostListener('window:resize', ['$event']) 
+  onResize(event: any) {
+    this.isMobile = window.innerWidth <= 759;
   }
 
 }

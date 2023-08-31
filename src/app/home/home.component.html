@@ -35,7 +35,7 @@
         <a href="/work">
           <figure (mouseover)="showCaption = true" (mouseleave)="showCaption = false">
             <img class="project-image w-100" src="assets/Images/pexels-alex-qian-2343466.jpg" alt="1">
-            <figcaption [ngClass]="{'visible': showCaption}">
+            <figcaption [ngClass]="{'visible': showCaption || isMobile}">
               <div class="title-wrapper">
                   <h1>Two-story Transformation</h1>
               </div>
@@ -51,7 +51,7 @@
         <a href="/work">
           <figure (mouseover)="showCaption1 = true" (mouseleave)="showCaption1 = false">
             <img class="project-image w-100" src="assets/Images/pexels-pixabay-280232.jpg" alt="2">
-            <figcaption [ngClass]="{'visible': showCaption1}">
+            <figcaption [ngClass]="{'visible': showCaption1 || isMobile}">
               <div class="title-wrapper">
                   <h1>From Classic to Contemporary</h1>
               </div>
@@ -67,7 +67,7 @@
         <a href="/work">
           <figure (mouseover)="showCaption2 = true" (mouseleave)="showCaption2 = false">
             <img class="project-image w-100" src="assets/Images/pexels-jason-boyd-3209045.jpg" alt="3">
-            <figcaption [ngClass]="{'visible': showCaption2}">
+            <figcaption [ngClass]="{'visible': showCaption2 || isMobile}">
               <div class="title-wrapper">
                   <h1>Two Main Floor Makeover</h1>
               </div>
@@ -83,7 +83,7 @@
         <a href="/work">
           <figure (mouseover)="showCaption3 = true" (mouseleave)="showCaption3 = false">
             <img class="project-image w-100" src="assets/Images/pexels-mark-2724748.jpg" alt="4">
-            <figcaption [ngClass]="{'visible': showCaption3}">
+            <figcaption [ngClass]="{'visible': showCaption3 || isMobile}">
               <div class="title-wrapper">
                   <h1>Tasteful Kitchen Transformation</h1>
               </div>

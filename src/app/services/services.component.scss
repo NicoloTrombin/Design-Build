@@ -49,6 +49,8 @@
 /* Cards */
 .is-transform-up{
     transform: translateY(-5rem);
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 .container2 {
@@ -159,4 +161,64 @@ svg:not(:root).svg-inline--fa {
 .see-our-work a:hover .text, .see-our-work a:hover {
     background-color: var(--white-color); 
     color: var(--third-color);
+}
+
+
+// Media Queries 
+@media(max-width: 1407px) {
+    .card{
+        padding: 2.5rem;
+    }
+}
+@media(max-width: 759px) {
+    .banner-title h1{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    .banner-desc h2 {
+        font-size: 21px;
+    }
+    .banner-title, .banner-desc {
+        width: 100%;
+    }
+    .is-transform-up {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+
+@media(max-width:600px) {
+    // Cards
+    .has-text-navy {
+        font-size: 3.5rem !important;
+    }
+    .card-title {
+        margin-top: 0;
+        font-size: 1.2rem !important;
+    }
+    .card-text {
+        margin-top: 0;
+        font-size: 1.1rem !important;
+    }
+    .hero{
+        padding-top: 5rem !important;
+    }
+}
+
+@media(max-width: 410px) {
+    .has-text-navy {
+        padding: 1.5rem;
+    }
+    .card {
+        padding: 0 !important;
+    }
+    .card-text {
+        font-size: 1rem !important;
+    }
+}
+
+@media(max-width: 331px) {
+    .main-banner {
+        transform: translateY(-50%);
+    }
 }
